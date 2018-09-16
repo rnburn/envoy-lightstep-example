@@ -1,10 +1,11 @@
-FROM lyft/envoy
+FROM envoyproxy/envoy:v1.6.0
 
 WORKDIR /app
 
 ADD . /app
 
-RUN yes | apt-get install python-pip python-dev build-essential
+RUN apt-get update
+RUN apt-get install -y python-pip python-dev build-essential
 RUN pip install -r requirements.txt
 
 EXPOSE 8080
