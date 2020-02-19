@@ -1,4 +1,4 @@
-FROM envoyproxy/envoy:v1.6.0
+FROM envoyproxy/envoy-dev:a5c6d907e398987b7c6c08df043ce04293c2cca7
 
 WORKDIR /app
 
