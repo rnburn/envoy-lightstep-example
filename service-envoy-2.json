@@ -1,7 +1,12 @@
 {
   "listeners": [
     {
-      "address": "tcp://0.0.0.0:9002",
+      "address": {
+        "socket_address": {
+          "address": "0.0.0.0",
+          "port_value": 9002
+        }
+      },
       "filters": [
         {
           "type": "read",
@@ -52,7 +57,12 @@
   },
   "admin": {
     "access_log_path": "/dev/null",
-    "address": "tcp://0.0.0.0:8003"
+    "address": {
+      "socket_address": {
+        "address": "0.0.0.0",
+        "port_value": 8003
+      }
+    }
   },
   "cluster_manager": {
     "clusters": [
