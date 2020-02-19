@@ -66,7 +66,7 @@ static_resources:
         - endpoint:
             address:
               socket_address:
-                address: colletor-grpc.lightstep.com
+                address: collector-grpc.lightstep.com
                 port_value: 443
 tracing:
   http:
